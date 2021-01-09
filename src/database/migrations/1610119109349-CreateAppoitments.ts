@@ -1,6 +1,6 @@
 import { MigrationInterface, QueryRunner, Table } from 'typeorm';
 
-export default class CreateAppointments1609844638154
+export default class CreateAppoitments1610118149431
   implements MigrationInterface {
   public async up(queryRunner: QueryRunner): Promise<void> {
     // dentro do metodo up nos vamos colocar oque agente quer colocar dentro do banco de dados quando essa migration for executada
@@ -22,7 +22,7 @@ export default class CreateAppointments1609844638154
           },
           {
             name: 'date',
-            type: 'timestamp sith time zone',
+            type: 'timestamp with time zone', // esse cara e do postgress
             isNullable: false,
           },
         ],
